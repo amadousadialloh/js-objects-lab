@@ -17,12 +17,10 @@ const game = {
     { name: "pokeball", quantity: 8 },
     { name: "rare candy", quantity: 99 },
   ],
-  difficulty: "Easy",
 };
 
 // console.dir(pokemon, { maxArrayLength: null });
-// console.log(pokemon[58].name);
-console.log(game);
+console.log(pokemon[58].name);
 
 /*
 Exercise 3
@@ -32,3 +30,21 @@ Exercise 3
 
 Solve Exercise 3 here:
 */
+
+game.difficulty = "Easy";
+
+/*
+Exercise 4
+1. Select a starter Pokémon from the `pokemon` array. Remember, a starter Pokémon's `starter` property is true.
+2. Add this Pokémon to the `game.party` array. Which array method will you use to add them?
+
+
+Solve Exercise 4 here:
+*/
+
+let starter = pokemon[0];
+game.party.push(starter);
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+console.log(game);
