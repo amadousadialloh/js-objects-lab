@@ -31,7 +31,7 @@ Exercise 3
 Solve Exercise 3 here:
 */
 
-game.difficulty = "Easy";
+game.difficulty = ["Easy", "Medium", "Hard"];
 
 /*
 Exercise 4
@@ -55,6 +55,20 @@ Solve Exercise 5 here:
 */
 
 game.party.push(pokemon[5], pokemon[8], pokemon[11]);
+
+/*
+Exercise 6
+1. Set the `completed` property to true for gyms with a difficulty below 3.
+2. Think about how you'd loop through the `gyms` array to check and update the `completed` property.
+
+
+Solve Exercise 6 here:
+*/
+game.gyms.forEach((task) => {
+  if (task.difficulty < 3) {
+    task.completed = true;
+  }
+});
 
 /* //////////////////////////////////////////////////////////////////////////////// */
 
