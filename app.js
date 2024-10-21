@@ -113,9 +113,19 @@ for (let i = 0; i < game.party.length; i++) {
     });
   }
 }
-// Log the new party array
-console.log(game.party);
+
+/*
+Exercise 8
+1. Print the name of each Pokémon in your party.
+2. Consider using a loop or an array method to access each Pokémon's name.
+
+Solve Exercise 8 here:
+*/
+
+game.party.forEach((pokemon) => {
+  console.log(pokemon.name);
+});
 
 /* //////////////////////////////////////////////////////////////////////////////// */
-
+console.log(game.party);
 console.log(game);
